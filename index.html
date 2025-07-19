@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- icons google : email telephone lien-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stacked_email" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail" />
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=link" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=contact_phone" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=contact_phone" /> -->
 
     <link rel="stylesheet" href="styles/style.css">
 
@@ -23,6 +26,26 @@
 </head>
 
 <body>
+    <header>
+        <div class="boxed">
+            <div class="flex aligncenter space-between">
+                <a href="/" class="header-logo">
+                    <img src="img/html-5.png">
+                </a>
+                <button onclick="openMenu()" class="header-menu-mobile">
+                    <span class="material-icons">list_alt</span>
+                </button>
+                <ul class="header-menu">
+                    <li ><a href="/">Accueil</a></li>
+                        <li ><a href="/">A propos</a></li>
+                        <li><a href="/">compétences</a></li>
+                        <li><a href="/">Réalisations</a></li>
+                        <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
 
     <div class="slider">
         <img src="img/Slider.PNG" class="slider-background">
@@ -34,13 +57,13 @@
 
     <div class="section">
         <div class="boxed">
-            <div class="flex">
-                <div class="w40">
+            <div class="flex toColumn mCenter">
+                <div class="w40 w100">
                     <h2>A propos de moi</h2>
                     <!-- <img src="img/IMG_4360.png" class="image"> -->
                 </div>
 
-                <div class="w60">
+                <div class="w60 w100">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt minima pariatur nemo, itaque
                         omnis sunt eaque provident voluptatem. Quibusdam error, dolore vitae perspiciatis reprehenderit
                         minima quos ducimus dolorem sequi mollitia cupiditate illo, quaerat qui hic aut, aliquid magni
@@ -54,23 +77,23 @@
     <div class="section dark">
         <div class="boxed text-center">
             <h2>Découvrez mes compétences</h2>
-            <div class="flex gap20">
-                <div class="w25 skill">
+            <div class="flex toColumn gap20">
+                <div class="w25 w100 skill">
                     <img src="img/html-5.png">
                     <h3>HTML</h3>
                 </div>
 
-                <div class="w25 skill">
+                <div class="w25 w100 skill">
                     <img src="img/css-3.png">
                     <h3>CSS</h3>
                 </div>
 
-                <div class="w25 skill">
+                <div class="w25 w100 skill">
                     <img src="img/script-java.png">
                     <h3>Javascript</h3>
                 </div>
 
-                <div class="w25 skill">
+                <div class="w25 w100 skill">
                     <img src="img/nodejs.png">
                     <h3>Node Js</h3>
                 </div>
@@ -93,23 +116,23 @@
     <div class="section">
         <div class="boxed text-center">
             <h2>Contactez-moi</h2>
-            <div class="flex space-between">
-                <div class="w32 contact">
-                    <span class="material-symbols-outlined icon">stacked_email</span>
+            <div class="flex toColumn space-between mGap20">
+                <div class="w32 w100 contact">
+                    <span class="material-icons icon">mail</span>
                     <span class="label">E-mail</span>
                     <span class="value">paomar8@gmail.com</span>
                 </div>
 
-                <div class="w32 contact">
-                    <span class="material-symbols-outlined icon">contact_phone</span>
+                <div class="w32 w100 contact">
+                    <span class="material-icons icon">contact_phone</span>
                     <span class="label">Telephone</span>
                     <span class="value">+33 7 63 44 67 89</span>
                 </div>
 
-                <div class="w32 contact">
-                    <span class="material-symbols-outlined icon">link</span>
+                <div class="w32 w100 contact">
+                    <span class="material-icons icon">link</span>
                     <span class="label">Linkedin</span>
-                    <span class="value">https://www.linkedin.com/in/el-hadji-cata-ndiaye?</span>
+                    <span class="value"><a href="#">https://www.linkedin.com/in/el-hadji-cata-ndiaye?</a></span>
                 </div>
             </div>
         </div>
