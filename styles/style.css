@@ -89,7 +89,7 @@ p {
 }
 
 .dark {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/Slider.PNG);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/dev-web-image.jpg);
     background-size: cover;
     background-position-y:50% ;
     color: #fff;
@@ -175,7 +175,7 @@ header {
 }
 
 .header-logo img {
-    width: 50px;
+    width: 75px;
 }
 
 .header-menu {
@@ -255,6 +255,11 @@ header {
     p {
         font-size: 1rem;
         text-wrap: balance;
+    }
+
+    ul li a {
+        font-size: 2rem;
+        color: rgb(78, 78, 235);
     }
 
     .slider {
