@@ -57,6 +57,9 @@ p {
     padding: 100px 0;
 }
 
+.saut {
+    padding: 10px 0;
+}
 .boxed {
     max-width: 1200px;
     margin-inline: auto;
