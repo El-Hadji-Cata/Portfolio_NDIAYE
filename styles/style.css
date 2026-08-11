@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -60,6 +64,7 @@ p {
 .saut {
     padding: 10px 0;
 }
+
 .boxed {
     max-width: 1200px;
     margin-inline: auto;
@@ -72,12 +77,6 @@ p {
 .w40 {
     width: 40%;
 }
-
-/* .image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-} */
 
 .w60 {
     width: 60%;
@@ -92,9 +91,9 @@ p {
 }
 
 .dark {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/dev-web-image.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/dev-web-image.jpg');
     background-size: cover;
-    background-position-y:50% ;
+    background-position: center;
     color: #fff;
 }
 
@@ -111,16 +110,21 @@ p {
     border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill img {
-    width: 100px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
 
 .skill h3 {
     margin-top: 10px;
     color: #000;
-
 }
 
 .gap20 {
@@ -131,36 +135,119 @@ p {
     justify-content: space-between;
 }
 
-.icon {
-    display: block;
-    font-size: 40px !important;
+/* --- SECTION CONTACT --- */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+    border: 1.5px dashed #000;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #fff;
+    min-height: 140px;
 }
 
-.label {
-    display: block;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 10px 0;
-    font-size: 1.5rem;
-}
-
-.value {
-    display: block;
-    font-size: 1.5rem;
-}
-
-.value a {
-    text-decoration: none;
+.contact .icon {
+    font-size: 36px !important;
+    line-height: 1;
+    margin-bottom: 10px;
+    display: inline-block;
     color: #000;
 }
 
-.contact {
-    border: 2px dashed #000;
-    border-radius: 15px;
-    padding: 30px;
-    box-sizing: border-box;
-
+.contact .label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    color: #000;
 }
+
+.contact .value {
+    display: block;
+    font-size: 1rem;
+    word-break: break-word;
+}
+
+.contact .value a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.contact .value a:hover {
+    color: #fc490b;
+}
+
+/* --- SECTION CONTACT (Grille flexible) --- */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+    border: 1.5px dashed #000;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #fff;
+    min-height: 140px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #fc490b;
+}
+
+.contact-card .icon {
+    font-size: 36px !important;
+    line-height: 1;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #000;
+}
+
+.contact-card .label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    color: #000;
+}
+
+.contact-card .value {
+    display: block;
+    font-size: 1rem;
+    word-break: break-word;
+}
+
+.contact-card .value a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-card .value a:hover {
+    color: #fc490b;
+}
+
+/* --- HEADER & NAVIGATION --- */
 
 header {
     position: fixed;
@@ -199,16 +286,203 @@ header {
 .header-menu li a:hover {
     background-color: #fc490b;
     border-radius: 10px;
+    color: #fff;
 }
 
 .header-menu-mobile {
     display: none;
 }
 
+/* --- SECTION REALISATIONS --- */
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    text-align: left;
+}
 
+.project-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-@media(max-width:810px) {
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #fc490b;
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-content h3 {
+    font-size: 1.25rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.project-content .tech-tags {
+    margin-bottom: 20px;
+}
+
+.project-content .tech-tags span {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-project {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-project:hover {
+    background-color: #fc490b;
+}
+
+.btn-project .material-icons {
+    font-size: 18px !important;
+}
+
+/* --- SECTION EXPERIENCES --- */
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left; /* Aligne le texte à gauche à l'intérieur des cartes */
+}
+
+.timeline-item {
+    background: rgba(0, 0, 0, 0.6); /* Fond sombre semi-transparent pour la lisibilité */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-3px);
+    border-color: #fc490b;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.timeline-header h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 0;
+}
+
+.timeline-date {
+    font-size: 0.95rem;
+    color: #fc490b;
+    font-weight: 600;
+}
+
+.timeline-company {
+    font-size: 1.05rem;
+    color: #ddd;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.timeline-tasks {
+    list-style-type: disc;
+    list-style-position: inside; /* Rentre les puces à l'intérieur du bloc */
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.timeline-tasks li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tags span {
+    background-color: rgba(252, 73, 11, 0.2);
+    color: #fff;
+    border: 1px solid #fc490b;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+/* --- ------ --- */
+
+/* --- RESPONSIVE MOBILE --- */
+
+@media(max-width: 810px) {
     header {
         height: 60px;
     }
@@ -237,13 +511,14 @@ header {
 
     .header-menu-mobile {
         display: block;
-        border: 8px;
-        background-color: #fff;
+        border: none;
+        background-color: transparent;
         position: absolute;
         left: 5%;
         top: 50%;
         transform: translateY(-50%);
         z-index: 1500;
+        cursor: pointer;
     }
 
     .visible {

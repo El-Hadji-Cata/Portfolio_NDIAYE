@@ -1,171 +1,311 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio | El Hadji Cata NDIAYE</title>
 
-    <!-- icons google : email telephone lien-->
-
+    <!-- Google Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail" />
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=link" />
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=contact_phone" /> -->
-
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
-
-    <!-- Police: Inter -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap" rel="stylesheet"> -->
-
-    <title>MonPortfolio</title>
 </head>
 
 <body>
     <header>
         <div class="boxed">
             <div class="flex aligncenter space-between">
-                <a href="/" class="header-logo">
-                    <img src="img/Capture.PNG">
+                <a href="#accueil" class="header-logo">
+                    <img src="img/Capture.PNG" alt="Logo Portfolio">
                 </a>
-                <button onclick="openMenu()" class="header-menu-mobile">
+                <button onclick="openMenu()" class="header-menu-mobile" aria-label="Ouvrir le menu">
                     <span class="material-icons">list_alt</span>
                 </button>
                 <ul class="header-menu">
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="/">A propos</a></li>
-                    <li><a href="/">compétences</a></li>
-                    <li><a href="/">Réalisations</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#realisations">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-
-    <div class="slider">
-        <img src="img/dev-web-image.jpg" class="slider-background">
-        <div class="slider-content">
-            <h1>EL Hadji Cata NDIAYE</h1>
-            <p>Je suis développeur full-stack</p>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="boxed">
-            <div class="flex toColumn mCenter">
-                <div class="w40 w100">
-                    <h2>A propos de moi</h2>
-                    <!-- <img src="img/IMG_4360.png" class="image"> -->
-                </div>
-
-                <div class="w60 w100">
-                    <p>Etant déjà développeur logiciel en C++ & Qt avec 2 années d'expérience
-                        à travers du maintien en condition opérationnel (MCO) et de la fabrication de nouvelles briques
-                        logicielles
-                        dans des entreprises internationales comme CNES, Manitowoc & Corys,
-                        j'ai osé sauté le pas dans le métier de développeur Web & Web Mobile afin d'avoir une pallette
-                        compléte dans le développment d'Applications. <br>
-                        Je suis passionnée par la création de sites et d'applications web innovantes du coté
-                        front-end comme du cote back-end.<br>
-
-                        Toujours à la recherche de nouveaux défis.
-                    </p>
-                </div>
-
+    <main>
+        <section id="accueil" class="slider">
+            <img src="img/dev-web-image.jpg" alt="Arrière-plan Développement Web" class="slider-background">
+            <div class="slider-content">
+                <h1>El Hadji Cata NDIAYE</h1>
+                <p>Développeur Web Full-Stack PHP | C++ 11 & 17 & Qt 5</p>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="section dark">
-        <div class="boxed text-center">
-            <h2>Découvrez mes compétences</h2>
-            <div class="flex toColumn gap20">
-                <div class="w25 w100 skill">
-                    <img src="img/html-5.png">
-                    <h3>HTML</h3>
-                </div>
+        <section id="apropos" class="section">
+            <div class="boxed">
+                <div class="flex toColumn mCenter">
+                    <div class="w40 w100">
+                        <h2>À propos de moi</h2>
+                    </div>
+                    <div class="w60 w100">
+                        <p>
+                            <strong>Développeur Full-Stack</strong> issu du monde du logiciel, j'ai forgé mon expertise
+                            pendant plus de 2 ans en développement <strong>C++ et Qt</strong>. Mon expérience dans le
+                            Maintien en Condition Opérationnelle (MCO) et la conception de briques logicielles complexes
+                            pour de grands comptes internationaux (CNES, Manitowoc, Corys) m'a apporté une grande
+                            rigueur, une culture forte de la performance et du code propre.<br><br>
 
-                <div class="w25 w100 skill">
-                    <img src="img/css-3.png">
-                    <h3>CSS</h3>
-                </div>
+                            Aujourd'hui, j'associe cette solide culture logicielle à l'écosystème <strong>Web & Web
+                                Mobile</strong> (JavaScript, Node.js, PHP, HTML/CSS). Cette double compétence me permet
+                            d'aborder le développement Front-End et Back-End avec une vision globale, en concevant des
+                            applications web innovantes, performantes et parfaitement structurées.<br><br>
 
-                <div class="w25 w100 skill">
-                    <img src="img/script-java.png">
-                    <h3>Javascript</h3>
-                </div>
-
-                <div class="w25 w100 skill">
-                    <img src="img/nodejs.png">
-                    <h3>Node Js</h3>
+                            Toujours passionné par les défis techniques, je mets cette polyvalence au service de projets
+                            ambitieux, de la conception architecturale jusqu'au déploiement.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="saut"></div>
-            <div class="flex toColumn gap20">
-                <div class="w25 w100 skill">
-                    <img src="img/c++11.png">
-                    <h3>C++11</h3>
+        </section>
+
+        <section id="competences" class="section dark">
+            <div class="boxed text-center">
+                <h2>Découvrez mes compétences</h2>
+                <div class="flex toColumn gap20">
+                    <div class="w25 w100 skill">
+                        <img src="img/html-5.png" alt="Logo HTML5">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="w25 w100 skill">
+                        <img src="img/css-3.png" alt="Logo CSS3">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="w25 w100 skill">
+                        <img src="img/script-java.png" alt="Logo JavaScript">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="w25 w100 skill">
+                        <img src="img/nodejs.png" alt="Logo Node.js">
+                        <h3>Node.js</h3>
+                    </div>
                 </div>
-
-                <div class="w25 w100 skill">
-                    <img src="img/qt5.png">
-                    <h3>QT 5</h3>
-                </div>
-
-                <div class="w25 w100 skill">
-                    <img src="img/git.png">
-                    <h3>Git </h3>
-                </div>
-
-                <div class="w25 w100 skill">
-                    <img src="img/php.jpg">
-                    <h3>PHP</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="boxed text-center">
-            <h2>Mes Réalisations</h2>
-        </div>
-    </div>
-
-    <div class="section dark">
-        <div class="boxed text-center">
-            <h2>Mes Experiences</h2>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="boxed text-center">
-            <h2>Contactez-moi</h2>
-            <div class="flex toColumn space-between mGap20">
-                <div class="w32 w100 contact">
-                    <span class="material-icons icon">mail</span>
-                    <span class="label">E-mail</span>
-                    <span class="value">paomar8@gmail.com</span>
-                </div>
-
-                <div class="w32 w100 contact">
-                    <span class="material-icons icon">contact_phone</span>
-                    <span class="label">Telephone</span>
-                    <span class="value">+33 7 63 44 67 89</span>
-                </div>
-
-                <div class="w32 w100 contact">
-                    <span class="material-icons icon">link</span>
-                    <span class="label">Linkedin</span>
-                    <span class="value"><a href="#">https://www.linkedin.com/in/el-hadji-cata-ndiaye?</a></span>
+                <div class="saut"></div>
+                <div class="flex toColumn gap20">
+                    <div class="w25 w100 skill">
+                        <img src="img/c++11.png" alt="Logo C++">
+                        <h3>C++11</h3>
+                    </div>
+                    <div class="w25 w100 skill">
+                        <img src="img/qt5.png" alt="Logo Qt5">
+                        <h3>QT 5</h3>
+                    </div>
+                    <div class="w25 w100 skill">
+                        <img src="img/git.png" alt="Logo Git">
+                        <h3>Git</h3>
+                    </div>
+                    <div class="w25 w100 skill">
+                        <img src="img/php.jpg" alt="Logo PHP">
+                        <h3>PHP</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section id="realisations" class="section">
+            <div class="boxed text-center">
+                <h2>Mes Réalisations</h2>
+
+                <div class="projects-grid">
+                    <!-- Projet 1 : Application Web / E-Commerce -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/dev-web-image.jpg" alt="Aperçu Projet Web">
+                        </div>
+                        <div class="project-content">
+                            <h3>Application Web Full-Stack</h3>
+                            <p>Développement d'une application web complète avec gestion des utilisateurs,
+                                authentification sécurisée et API RESTful.</p>
+                            <div class="tech-tags">
+                                <span>Node.js</span>
+                                <span>PHP</span>
+                                <span>JavaScript</span>
+                                <span>SQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/votre-nom-utilisateur" target="_blank"
+                                    rel="noopener noreferrer" class="btn-project">
+                                    <span class="material-icons">code</span> Code source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 : CV Interactif & CI/CD -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/dev-web-image.jpg" alt="Aperçu CV Deploy">
+                        </div>
+                        <div class="project-content">
+                            <h3>CV Déployé via GitHub Actions</h3>
+                            <p>Mise en place d'un pipeline CI/CD automatisé pour le build et le déploiement continu d'un
+                                CV interactif sur GitHub Pages.</p>
+                            <div class="tech-tags">
+                                <span>HTML/CSS</span>
+                                <span>GitHub Actions</span>
+                                <span>CI/CD</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://votre-nom-utilisateur.github.io/votre-repo-cv" target="_blank"
+                                    rel="noopener noreferrer" class="btn-project">
+                                    <span class="material-icons">visibility</span> Voir le site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 : Brique Logicielles C++ / Qt -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/c++11.png" alt="Aperçu Projet C++ Qt">
+                        </div>
+                        <div class="project-content">
+                            <h3>Module & Interface C++ / Qt</h3>
+                            <p>Conception d'une brique logicielle orientée objet et optimisation des performances pour
+                                des traitements de données en temps réel.</p>
+                            <div class="tech-tags">
+                                <span>C++11</span>
+                                <span>Qt 5</span>
+                                <span>Git</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/votre-nom-utilisateur" target="_blank"
+                                    rel="noopener noreferrer" class="btn-project">
+                                    <span class="material-icons">code</span> En savoir plus
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="section dark">
+            <div class="boxed text-center">
+                <h2>Mes Expériences</h2>
+
+                <div class="timeline">
+                    <!-- Expérience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Développeur Web & Mobile Full-Stack</h3>
+                            <span class="timeline-date">2025 - Présent</span>
+                        </div>
+                        <p class="timeline-company">Indépendant / Projets Web</p>
+                        <ul class="timeline-tasks">
+                            <li>Conception et développement d'applications web sur-mesure (Front-end & Back-end).</li>
+                            <li>Création d'APIs RESTful et intégration de bases de données relationnelles.</li>
+                            <li>Automatisation des déploiements via GitHub Actions (CI/CD).</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Node.js</span>
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+
+                    <!-- Expérience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Développeur Logiciel C++ / Qt</h3>
+                            <span class="timeline-date">2 ans d'expérience</span>
+                        </div>
+                        <p class="timeline-company">Projets grands comptes (CNES, Manitowoc, Corys)</p>
+                        <ul class="timeline-tasks">
+                            <li>Maintien en Condition Opérationnelle (MCO) de systèmes logiciels critiques.</li>
+                            <li>Développement et intégration de nouvelles briques logicielles en C++ et Qt.</li>
+                            <li>Optimisation des performances et gestion rigoureuse de la mémoire.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>C++11</span>
+                            <span>Qt 5</span>
+                            <span>Git</span>
+                            <span>Linux</span>
+                        </div>
+                    </div>
+
+                    <!-- Expérience 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Formation Développeur Web & Web Mobile</h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <p class="timeline-company">M2i Formation</p>
+                        <ul class="timeline-tasks">
+                            <li>Spécialisation dans les architectures web modernes et la gestion de projet agile.</li>
+                            <li>Réalisation de projets full-stack complets de la conception au déploiement.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Full-Stack</span>
+                            <span>Agile</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="boxed text-center">
+                <h2>Contactez-moi</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <span class="material-icons icon">email</span>
+                        <span class="label">E-mail</span>
+                        <span class="value"><a href="mailto:paomar8@gmail.com">paomar8@gmail.com</a></span>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="material-icons icon">phone</span>
+                        <span class="label">Téléphone</span>
+                        <span class="value"><a href="tel:+33763446789">+33 7 63 44 67 89</a></span>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="material-icons icon">link</span>
+                        <span class="label">LinkedIn</span>
+                        <span class="value">
+                            <a href="https://www.linkedin.com/in/elhadjicata" target="_blank"
+                                rel="noopener noreferrer">Profil LinkedIn</a>
+                        </span>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="material-icons icon">code</span>
+                        <span class="label">GitHub</span>
+                        <span class="value">
+                            <a href="https://github.com/El-Hadji-Cata" target="_blank" rel="noopener noreferrer">Mon
+                                GitHub</a>
+                        </span>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="material-icons icon">description</span>
+                        <span class="label">Mon CV</span>
+                        <span class="value">
+                            <a href="https://el-hadji-cata.github.io/cv-el-hadji-ndiaye" target="_blank"
+                                rel="noopener noreferrer">Consulter mon CV</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="js/script.js"></script>
 </body>
+
+</html>
